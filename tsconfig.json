@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    }
+}
