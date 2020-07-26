@@ -19,7 +19,7 @@ try {
   bluelinkClient.on("ready", async () => {
     const vehicle = bluelinkClient.getVehicle(process.env.BL_VIN);
 
-    const status = await vehicle.status({ parsed: false });
+    const status = await vehicle.status({ parsed: false, refresh: true });
 
     await mqttClient.publish(
       "kona/status",
